@@ -1,0 +1,98 @@
+:root {
+  --transition: all 0.3s linear;
+  --fg: #D6F4ED;
+  --pt: #473472;
+  --st: #53629E;
+  --bg: #87BAC3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+  color: var(--pt);
+  user-select: none;
+}
+.profile {
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: var(--fg);
+  box-shadow: 0 5px 15px var(--pt);
+  user-select:text;
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-details, .c-details {
+  max-width: 100%;
+  padding: 10px;
+  line-height: 30px;
+}
+.p-image {
+  width:150px;
+  border: 0 solid var(--pt);
+  box-shadow: 0 0 10px var(--pt);
+  border-radius: 10% 30%;
+  filter: brightness(1.3);
+}
+.c-links {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+}
+.c-links a {
+  width: 100%;
+}
+.c-links a:hover{
+  background-color: var(--bg);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+.c-links a img {
+  width: 35px;
+  filter: brightness(100%);
+  filter: drop-shadow(3px 3px 4px var(--pt));
+}
+.skill_container {
+  width: 100%;
+  margin-block-start: 10px;
+  background-color: var(--fg);
+}
+.skill_container .skills_title {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid var(--st);
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+}
+.skill {
+  width: 60px;
+  height: auto;
+  background-color: var(--bg);
+  color: var(--pt);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--pt);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill img {
+  width: 30px;
+  height: auto;
+}
+.skills p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
